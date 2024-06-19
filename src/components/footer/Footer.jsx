@@ -1,23 +1,37 @@
 import React from 'react';
-import './footer.scss';
+import './footer.scss'; // Importing the SCSS file
 
-function Footer() {
+const Footer = () => {
+  const productItems = ['Overview', 'Pricing', 'Marketplace', 'Features', 'Integrations'];
+  const connectItems = ['Contact', 'Newsletter', 'LinkedIn'];
+
   return (
     <footer className="footer">
-      <div className="footer-links">
-        <ul className="links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#blog">Blog</a></li>
-        </ul>
-        <ul className="links">
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#newsletter">Newsletter</a></li>
-          <li><a href="#linkedin">LinkedIn</a></li>
-        </ul>
+      <div className="container">
+        <div className="grid">
+          <div className="text-left">
+            <h2>Blogr</h2>
+          </div>
+          <div className="text-left">
+            <h2>Product</h2>
+            <ul>
+              {productItems.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+          </div>
+          <div className="text-left">
+            <h2>Connect</h2>
+            <ul>
+              {connectItems.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;

@@ -1,18 +1,23 @@
 import { useState } from 'react'
 import './App.css'
-import Header from './components/header/Header'
+import Navbar from './components/navbar/Navbar'
 import HeroSection from './components/herosection/HeroSection'
 import FeaturesSection from './components/Feature/Features'
 import Footer from './components/footer/Footer'
+import Content from './components/contents/Content'
+import Content2 from './components/contents/Content1'
+import Content3 from './components/contents/Content2'
 
 function App() {
 
 
   return (
     <div className="App">
-    <Header />
-    <HeroSection />
-    <FeaturesSection />
+      <Navbar />
+      <HeroSection />
+      <Content />
+      <Content2 />
+      <Content3 />
     <Footer />
   </div>
   )

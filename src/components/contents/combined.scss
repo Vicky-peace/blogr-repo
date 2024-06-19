@@ -1,0 +1,153 @@
+// Styles for Content
+.content {
+    width: 100%;
+    padding: 2rem;
+    @media (min-width: 768px) {
+      padding: 2rem 4rem;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    .text-block {
+      padding: 1rem;
+      @media (min-width: 768px) {
+        width: 50%;
+        order: 2;
+      }
+  
+      h2 {
+        color: #333;
+        text-align: left;
+        font-size: 1.25rem; // 2xl
+        @media (min-width: 768px) {
+          font-size: 1.875rem; // 3xl
+        }
+        font-weight: 600;
+        margin-top: 1rem;
+        margin-top: 3rem; // on larger screens
+      }
+  
+      p {
+        color: #333;
+        text-align: left;
+        margin-top: 0.5rem;
+        @media (min-width: 768px) {
+          margin-top: 1rem;
+        }
+      }
+    }
+  
+    .image-block {
+      padding: 1rem;
+      padding: 2rem; // on larger screens
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+  
+  // Styles for Content2
+  .content2 {
+    .container {
+      margin-top: 3.75rem; // Tailwind mt-15
+      display: flex;
+      flex-direction: column-reverse;
+      @media (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      align-items: center;
+      width: 100%;
+      max-width: 100%;
+      background-color: #333; // very-dark-gray-blue
+      border-radius: 2rem;
+      overflow: hidden;
+  
+      .text-area {
+        width: 50%;
+        padding: 2rem;
+        color: white;
+        text-align: center;
+        @media (min-width: 768px) {
+          text-align: left;
+        }
+  
+        h2 {
+          font-size: 1.25rem; // 2xl
+          @media (min-width: 768px) {
+            font-size: 1.875rem; // 3xl
+          }
+          font-weight: bold;
+          margin-bottom: 1rem;
+        }
+  
+        p {
+          font-size: 0.875rem; // sm
+          @media (min-width: 768px) {
+            font-size: 1rem; // base
+          }
+          margin-bottom: 1rem;
+        }
+      }
+  
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+  
+  // Styles for Content3
+  .content3 {
+    .container {
+      margin-top: 5rem;
+      margin-bottom: 5rem;
+      display: flex;
+      flex-direction: column;
+      @media (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      align-items: center;
+      width: 100%;
+      max-width: 100%;
+      background-color: white;
+      border-radius: 2rem;
+      overflow: hidden;
+  
+      .text-area {
+        width: 50%;
+        padding: 2rem;
+        color: #333;
+        text-align: center;
+        @media (min-width: 768px) {
+          text-align: left;
+        }
+  
+        h2 {
+          font-size: 1.25rem; // 2xl
+          @media (min-width: 768px) {
+            font-size: 1.875rem; // 3xl
+          }
+          font-weight: bold;
+          margin-bottom: 1rem;
+        }
+  
+        p {
+          font-size: 0.875rem; // sm
+          @media (min-width: 768px) {
+            font-size: 1rem; // base
+          }
+          margin-bottom: 1rem;
+        }
+      }
+  
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+  

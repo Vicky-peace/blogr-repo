@@ -1,17 +1,31 @@
 import React from 'react';
-import './heroSection.scss';
-
-function HeroSection() {
+import Image2 from '../../images/bg-pattern-intro-desktop.svg';
+import './heroSection.scss'; 
+const Hero = () => {
   return (
-    <section className="hero">
-      <h1>A modern publishing platform</h1>
-      <p>Grow your audience and build your online brand</p>
-      <div className="buttons">
-        <button className="btn">Start for Free</button>
-        <button className="btn btn-light">Learn More</button>
+    <div className="hero">
+      <div 
+        className="hero-background"
+        style={{ backgroundImage: `url(${Image2})` }}
+      ></div>
+      <div className="hero-content">
+        <h1 className="hero-title">
+          A modern publishing platform
+        </h1>
+        <p className="hero-subtitle">
+          Grow your audience and build your online brand
+        </p>
+        <div className="buttons">
+          <button className="button start-button">
+            Start for Free
+          </button>
+          <button className="button learn-button">
+            Learn More
+          </button>
+        </div>
       </div>
-    </section>
+    </div>
   );
-}
+};
 
-export default HeroSection;
+export default Hero;
