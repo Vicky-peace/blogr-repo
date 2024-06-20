@@ -1,0 +1,92 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff6347;
+  padding: 0.5rem 2rem;
+  color: white;
+
+  .navbar-title {
+    font-size: 2rem;
+    color: white; 
+  }
+
+  .menu-items {
+    display: flex;
+    gap: 2rem; 
+
+    .dropdown {
+      position: relative;
+      .dropdown-toggle {
+        background: none;
+        border: none;
+        color: white;
+        font-size: 1rem;
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+
+        &:hover, &:focus {
+          outline: none;
+          color: #ffe5d4; 
+        }
+      }
+
+      .dropdown-content {
+        display: none; // Initially hidden
+        position: absolute;
+        background-color: #fff;
+        min-width: 160px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        border-radius: 4px; // Smoothed corners
+
+        ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+
+          li {
+            padding: 0.5rem 1rem;
+            border-bottom: 1px solid #f1f1f1;
+
+            &:last-child {
+              border-bottom: none;
+            }
+
+            &:hover {
+              background-color: #f1f1f1;
+            }
+          }
+        }
+      }
+
+      &:hover .dropdown-content, &:focus-within .dropdown-content {
+        display: block; // Show on hover or focus within
+      }
+    }
+  }
+
+  .auth-buttons {
+    display: flex;
+    gap: 1rem;
+
+    .login-btn, .signup-btn {
+      background-color: white;
+      color: #ff6347;
+      border: none;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 4px;
+      font-weight: bold;
+
+      &:hover {
+        background-color: #ffe5d4; // Lighter shade for hover
+      }
+    }
+
+    .signup-btn {
+      background-color: #eee; // Distinguish sign up button with a different color
+    }
+  }
+}

@@ -1,10 +1,11 @@
+
 .App {
   text-align: center;
+  overflow: hidden;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  height: 40vh;
 }
 
 @media (prefers-reduced-motion: no-preference) {
