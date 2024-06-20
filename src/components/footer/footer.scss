@@ -1,12 +1,12 @@
 .footer {
-    background-color: #1a202c; // TailwindCSS bg-gray-900
+    background-color: #1a202c; 
     color: white;
-    padding: 24px 0; // py-6 in TailwindCSS
+    padding: 24px 0; 
   
     .container {
       margin: 0 auto;
       padding: 0 16px;
-      max-width: 1280px; // Typically width for mx-auto in large screens
+      max-width: 1280px; 
   
       .grid {
         display: grid;
@@ -16,22 +16,23 @@
           grid-template-columns: repeat(3, 1fr);
         }
   
-        gap: 16px; // gap-4 in TailwindCSS
+        gap: 16px; 
   
         .text-left {
           text-align: left;
   
           h2 {
-            font-size: 1.25rem; // text-lg in TailwindCSS
-            font-weight: 600; // font-semibold in TailwindCSS
-            margin-bottom: 8px; // mb-2 in TailwindCSS
+            font-size: 1.25rem; 
+            font-weight: 600; 
+            margin-bottom: 8px;
           }
   
           ul {
-            font-size: 0.875rem; // text-sm in TailwindCSS
+            font-size: 0.875rem; 
   
             li {
-              margin-bottom: 4px; // mb-1 in TailwindCSS
+              margin-bottom: 4px; 
+              list-style-type: none;
             }
           }
         }

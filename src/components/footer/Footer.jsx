@@ -1,6 +1,5 @@
 import React from 'react';
-import './footer.scss'; // Importing the SCSS file
-
+import './footer.scss'; 
 const Footer = () => {
   const productItems = ['Overview', 'Pricing', 'Marketplace', 'Features', 'Integrations'];
   const connectItems = ['Contact', 'Newsletter', 'LinkedIn'];
