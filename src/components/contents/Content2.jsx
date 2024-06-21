@@ -6,6 +6,7 @@ const Content3 = () => {
   return (
     <div className="content3">
       <div className="container">
+      <img src={ImageL} alt="Laptop showing tooling" />
         <div className="text-area">
           <h2>Free, open, simple</h2>
           <p>
@@ -19,7 +20,7 @@ const Content3 = () => {
             capable of producing even the most complicated sites.
           </p>
         </div>
-        <img src={ImageL} alt="Laptop showing tooling" />
+        
       </div>
     </div>
   );

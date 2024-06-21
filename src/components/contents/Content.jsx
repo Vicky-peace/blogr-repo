@@ -5,6 +5,9 @@ import './combined.scss'; // Importing combined styles
 const Content = () => {
   return (
     <div className="content">
+       <div className="image-block">
+        <img src={Image1} alt="Editor interface" />
+      </div>
       <div className="text-block">
         <h2>Introducing an extensible editor</h2>
         <p>
@@ -19,9 +22,7 @@ const Content = () => {
           by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
         </p>
       </div>
-      <div className="image-block">
-        <img src={Image1} alt="Editor interface" />
-      </div>
+     
     </div>
   );
 };

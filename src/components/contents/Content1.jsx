@@ -6,6 +6,7 @@ const Content2 = () => {
   return (
     <div className="content2">
       <div className="container">
+      <img src={Phone} alt="Phone infrastructure" />
         <div className="text-area">
           <h2>State of the Art Infrastructure</h2>
           <p>
@@ -15,7 +16,7 @@ const Content2 = () => {
             This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
           </p>
         </div>
-        <img src={Phone} alt="Phone infrastructure" />
+        
       </div>
     </div>
   );
